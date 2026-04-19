@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1776606873.21579 "/Users/yashmittal/Desktop/resume_maker/maker.tex" "maker.pdf" "maker" 1776606873.66793 0
-  "/Users/yashmittal/Desktop/resume_maker/maker.tex" 1776606873.05475 8919 325ea9c15b980cbc33f91f7c452dcf7b ""
+["pdflatex"] 1776607028.20782 "/Users/yashmittal/Desktop/resume_maker/maker.tex" "maker.pdf" "maker" 1776607028.64003 0
+  "/Users/yashmittal/Desktop/resume_maker/maker.tex" 1776607027.99947 8926 dfebb651e51dd70165e65cafc75b517b ""
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc" 1622837620 2920 d63721872b8c77041b88e51b8f7c291d ""
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free0.enc" 1622837620 3083 a707712f77b073b3833e4b1334a30e99 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc" 1622837620 3042 0e2b14b9be7d01075a4c4591d5d1781b ""
@@ -102,9 +102,9 @@
   "/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1776421086 5573038 b99aad5e4898a9034e953632f940512b ""
   "/usr/local/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt" 1776420977 3636772 de2357af0c31722a72b6598a059e3dff ""
   "/usr/local/texlive/2026/texmf.cnf" 1774209515 577 648cd9f92f9c0eac486f4c71c85cfbbe ""
-  "maker.aux" 1776606873.61202 824 18a8de8cd9d38f661e28296d1e4983d8 "pdflatex"
-  "maker.out" 1776606873.61257 667 b99b332ba8a2a23df784e9e2fbd3e95b "pdflatex"
-  "maker.tex" 1776606873.05475 8919 325ea9c15b980cbc33f91f7c452dcf7b ""
+  "maker.aux" 1776607028.58536 824 0fc46bd8702f48dbde2229e59e5cf3d9 "pdflatex"
+  "maker.out" 1776607028.58591 667 b99b332ba8a2a23df784e9e2fbd3e95b "pdflatex"
+  "maker.tex" 1776607027.99947 8926 dfebb651e51dd70165e65cafc75b517b ""
   (generated)
   "maker.aux"
   "maker.log"
