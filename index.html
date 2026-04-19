@@ -2,19 +2,53 @@
 <html>
 <head>
   <title>Live PDF</title>
-  <meta http-equiv="refresh" content="3">
   <style>
     body { margin: 0; }
     iframe { width: 100%; height: 100vh; border: none; }
+    #status {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background: #000;
+      color: #fff;
+      padding: 5px 10px;
+      font-size: 12px;
+      border-radius: 5px;
+      opacity: 0.7;
+    }
   </style>
 </head>
 <body>
-  <iframe id="pdf"></iframe>
+
+<div id="status">Checking...</div>
+<iframe id="pdf" src="maker.pdf"></iframe>
 
 <script>
-setInterval(() => {
-  document.getElementById("pdf").src = "maker.pdf?v=" + new Date().getTime();
-}, 3000);
+let lastModified = null;
+
+async function checkUpdate() {
+  try {
+    const response = await fetch("maker.pdf", { method: "HEAD" });
+    const newModified = response.headers.get("Last-Modified");
+
+    if (lastModified && newModified !== lastModified) {
+      // PDF updated → reload
+      document.getElementById("pdf").src =
+        "maker.pdf?v=" + new Date().getTime();
+      document.getElementById("status").innerText = "Updated!";
+    } else {
+      document.getElementById("status").innerText = "No change";
+    }
+
+    lastModified = newModified;
+  } catch (e) {
+    document.getElementById("status").innerText = "Error checking";
+  }
+}
+
+// check every 5 seconds (safe for reading)
+setInterval(checkUpdate, 5000);
 </script>
+
 </body>
 </html>
