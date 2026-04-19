@@ -9,6 +9,12 @@
   </style>
 </head>
 <body>
-  <iframe src="maker.pdf"></iframe>
+  <iframe id="pdf"></iframe>
+
+<script>
+setInterval(() => {
+  document.getElementById("pdf").src = "maker.pdf?v=" + new Date().getTime();
+}, 3000);
+</script>
 </body>
 </html>
