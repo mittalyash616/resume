@@ -1,0 +1,203 @@
+%-------------------------
+% Yash Mittal - One Page Resume (With Profile Links)
+%-------------------------
+\documentclass[9.5pt,letterpaper]{article}
+
+\usepackage[left=0.5in, right=0.5in, top=0.5in, bottom=0.5in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{array}
+\usepackage{tabularx}
+
+
+\hypersetup{colorlinks=true, urlcolor=blue}
+\pagestyle{empty}
+\raggedbottom
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{0pt}
+
+% Section formatting
+\titleformat{\section}
+  {\vspace{-4pt}\bfseries\large}
+  {}{0em}{}[\vspace{1pt}\titlerule\vspace{-2pt}]
+\titlespacing*{\section}{0pt}{5pt}{4pt}
+
+%---- Custom Commands ----
+\newcommand{\resumeItem}[1]{%
+  \item\small{#1\vspace{-1pt}}%
+}
+
+\newenvironment{resumeList}{%
+  \begin{itemize}[
+    leftmargin=0.18in,
+    label=\textbullet,
+    itemsep=1pt,
+    topsep=3pt,
+    parsep=0pt
+  ]%
+}{%
+  \end{itemize}\vspace{-2pt}%
+}
+
+\newenvironment{outerList}{%
+  \begin{itemize}[leftmargin=0pt, label={}, itemsep=0pt, topsep=0pt, parsep=0pt]%
+}{%
+  \end{itemize}%
+}
+
+\newcommand{\workEntry}[3]{%
+  \item[]
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textbf{#1} \textit{\small $|$ #2} & \small #3
+  \end{tabularx}\vspace{1pt}
+}
+
+\newcommand{\projectEntry}[2]{%
+  \item[]
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textbf{#1} & \small\textit{#2}
+  \end{tabularx}\vspace{1pt}
+}
+
+\newcommand{\eduEntry}[3]{%
+  \item[]
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textbf{#1} \textit{\small $|$ #2} & \small #3
+  \end{tabularx}\vspace{1pt}
+}
+
+%==========================================
+\begin{document}
+%==========================================
+
+%---------- HEADER ----------
+\begin{center}
+  {\LARGE\bfseries YASH MITTAL}\\[4pt]
+  \small
+  % ---- ROW 1: Contact Info ----
+  \faPhone~+91-9457016627\enspace\textbar\enspace
+  \faEnvelope~\href{mailto:mittalyash616@gmail.com}{mittalyash616@gmail.com}\enspace\textbar\enspace
+  \faLinkedin~\href{https://linkedin.com/in/yash-mittal-a42645319}{linkedin.com/in/yash-mittal-a42645319}\\[3pt]
+  % ---- ROW 2: Profile Links ----
+  \faGithub~\href{https://github.com/mittalyash616}{github.com/mittalyash616}\enspace\textbar\enspace
+  \faCode~\href{https://codolio.com/profile/yash_mittal}{codolio.com/profile/profile/yash\_mittal}
+\end{center}
+\vspace{-8pt}
+
+%---------- PROFESSIONAL SUMMARY ----------
+\section{PROFESSIONAL SUMMARY}
+
+\small
+AI-focused Computer Science Engineering student with hands-on experience in developing intelligent systems, LLM-based applications, and scalable cloud-backed architectures. Proficient in end-to-end ML pipelines, autonomous reasoning workflows, and backend system design. Adept at leveraging LLMOps and MLOps for building production-ready AI solutions, with a strong emphasis on efficiency, modular design, and system scalability. Passionate about solving complex problems through high-performance, real-world software.
+
+%---------- TECHNICAL SKILLS ----------
+\vspace{2pt}
+\section{Technical Skills}
+\small
+\begin{tabularx}{\linewidth}{@{} >{\bfseries}l X @{}}
+  Languages:           & Python, Java, C++, JavaScript, HTML5, CSS3, SQL \\
+  Frameworks:          & FastAPI, Flask, LangChain, Streamlit  \\
+  AI \& Cloud:         & Machine Learning, LLMOps, MLOps, RAG, Multimodal AI, TensorFlow/PyTorch, Scikit-learn \\
+  Platforms:     & AWS, Vercel, Hugging Face, Kaggle, GitHub, Docker \\
+  Core Skills:   & Data Structures \& Algorithms, Competitive Programming, Problem Solving, Project Management \\
+\end{tabularx}
+
+%---------- CERTIFICATIONS ----------
+\vspace{2pt}
+\section{Certifications}
+\begin{resumeList}
+  \resumeItem{AWS Certified AI Practitioner (AIF-C01) - AWS}
+  \resumeItem{Machine Learning Specialisation — Coursera}
+  \resumeItem{Software Engineering — NPTEL }
+\end{resumeList}
+
+%---------- WORK EXPERIENCE ----------
+
+\section{Work Experience}
+\begin{outerList}
+    
+  \workEntry{AI Intern}{Infosys Springboard, Remote}{Feb 2026 – Present}
+  \vspace{-15pt}
+  \begin{resumeList}
+    \resumeItem{Developing \textbf{ClinScan Lung-Abnormality Detection} on Chest X-rays using deep learning and computer vision techniques.}
+    \resumeItem{Designing and implementing AI-powered diagnostic pipelines in collaboration with cross-functional engineering teams.}
+  \end{resumeList}
+\vspace{5pt}
+  \workEntry{Senior Executive – Placement Turnaround}{Dean Career Cloud | SCSET, Greater Noida}{Feb 2026 – Present}
+  \vspace{-15pt}
+  \begin{resumeList}
+    \resumeItem{Driving placement initiatives and career development programs to improve student employment outcomes at scale.}
+    \resumeItem{Coordinating with industry partners to establish internship opportunities and full-time job pipelines for students.}
+  \end{resumeList}
+\vspace{5pt}
+  \workEntry{Placement Coordinator}{Bennett University, Greater Noida}{Jan 2026 – Present}
+  \vspace{-15pt}
+  \begin{resumeList}
+    \resumeItem{Managed and maintained student databases to efficiently track placements and employer interactions.}
+    \resumeItem{Built relationships with industry partners to identify and secure internship and job openings for students.}
+  \end{resumeList}
+\vspace{5pt}
+  \workEntry{Data Science Intern}{Finlatics}{Dec 2024 – Feb 2025}
+  \begin{resumeList}
+    
+    \resumeItem{Analyzed real-world company datasets using Python to uncover patterns, trends, and insights for informed decision-making.}
+    \resumeItem{Applied data wrangling, exploratory data analysis, and visualization techniques to deliver business intelligence reports.}
+  \end{resumeList}
+
+\end{outerList}
+
+%---------- PROJECTS ----------
+\section{Projects}
+\begin{outerList}
+
+  \projectEntry{AgroVision — Multimodal AI Agent for Agriculture}{}
+  \begin{resumeList}
+    \resumeItem{Architected a Multimodal AI Agent integrating text and image processing to provide real-time, actionable farming advisory.}
+    \resumeItem{Leveraged computer vision and NLP pipelines to analyze crop images and deliver data-driven insights to farmers.}
+  \end{resumeList}
+
+  \projectEntry{Real-Time Medical Assistant}{Hackurate Hackathon}
+  \begin{resumeList}
+    \resumeItem{Engineered a low-latency AI assistant that analyzes doctor-patient consultations in real-time using speech-to-text and clinical NLP.}
+    \resumeItem{Implemented structured data extraction from unstructured medical conversations to support clinical documentation workflows.}
+  \end{resumeList}
+
+  \projectEntry{Deep Research Agent}{Hackaccino Hackathon}
+  \begin{resumeList}
+    \resumeItem{Built an autonomous AI Agent capable of recursive web navigation and multi-step LLMOps reasoning to synthesize complex topics.}
+    \resumeItem{Designed retrieval-augmented generation pipelines ensuring structured, reliable, and citation-backed research report generation.}
+  \end{resumeList}
+
+\end{outerList}
+
+%---------- EDUCATION ----------
+\section{Education}
+\begin{outerList}
+
+  \eduEntry{B.Tech — Computer Science \& Engineering (AI/ML)}{Bennett University, Muzaffarnagar}{Expected May 2028}
+  \begin{resumeList}
+    \resumeItem{GPA: \textbf{10.0 CGPA} — Perfect score achieved across Semesters 1, 2, and 3}
+  \end{resumeList}
+
+  \eduEntry{Intermediate (Class XII)}{M.G. Public School, Muzaffarnagar}{May 2024}
+  \begin{resumeList}
+    \resumeItem{Scored \textbf{92.4\%} — Ranked 4\textsuperscript{th} in school; top position in Mathematics and Computer Science}
+  \end{resumeList}
+
+  \eduEntry{High School (Class X)}{M.G. Public School, Muzaffarnagar}{June 2022}
+  \begin{resumeList}
+    \resumeItem{Scored \textbf{96.6\%} — Ranked 5\textsuperscript{th} in school}
+  \end{resumeList}
+
+\end{outerList}
+
+%---------- LANGUAGES ----------
+\section{Languages}
+\small
+\textbf{English:} Intermediate (B1) \quad\textbar\quad \textbf{Hindi:} Advanced (C1)
+
+\end{document}
