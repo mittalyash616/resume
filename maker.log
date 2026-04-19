@@ -348,13 +348,13 @@ Package rerunfilecheck Info: File `maker.out' has not changed.
 Here is how much of TeX's memory you used:
  12954 strings out of 467525
  222435 string characters out of 5418982
- 650632 words of memory out of 5000000
+ 649632 words of memory out of 5000000
  41709 multiletter control sequences out of 15000+600000
  669345 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,9n,79p,635b,440s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,9n,79p,632b,440s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2026/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Brands-Regular.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmbx9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy9.pfb>
-Output written on maker.pdf (1 page, 165334 bytes).
+Output written on maker.pdf (1 page, 165305 bytes).
 PDF statistics:
  106 PDF objects out of 1000 (max. 8388607)
  79 compressed objects within 1 object stream
